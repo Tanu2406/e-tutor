@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Imports the "Poppins" font from Google Fonts. */
+/* The ital,wght parameter allows selecting multiple styles (italic, weights from 100–900). */
+@tailwind base;/* Adds global reset and normalization styles. */
+@tailwind components;/* Includes pre-designed component styles. */
+@tailwind utilities;/* Adds utility-first classes for building custom designs. */
+
+@layer components {
+  /* Custom Layer */
+  /* Define a reusable custom class (primary-btn) for buttons. */
+  .primary-btn {
+    @apply bg-primary font-semibold px-6 py-3 rounded-full hover:!scale-110 hover:!shadow-xl duration-300;
+  }
+}
+/* @apply: Combines multiple Tailwind utility classes into one custom class:
+bg-primary: Sets the button background color to the primary color.
+font-semibold: Makes the font slightly bold.
+px-6 py-3: Adds padding (6 units horizontally, 3 units vertically).
+rounded-full: Makes the button edges fully rounded.
+hover:!scale-110: Enlarges the button slightly (10% larger) on hover.
+hover:!shadow-xl: Adds a large shadow on hover.
+duration-300: Smooth animation duration for hover effects (300ms). */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Sets the font family for the entire website to "Poppins" with a fallback of sans-serif */
