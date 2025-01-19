@@ -1,5 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
+import Slider from "react-slick";//Slider: A React component from the react-slick library used to create a responsive, customizable carousel/slider.
+
 
 const TestimonialsData = [
   {
@@ -33,21 +34,23 @@ const TestimonialsData = [
 ];
 
 const Testimonial = () => {
+    //Slider Settings: Configuration object for the react-slick slider
   const setting = {
-    dots: true,
-    arrow: false,
-    infinite: true,
-    speed: 500,
-    slidesToScroll: 1,
+    dots: true,// Displays navigation dots below the slider.
+    arrow: false,// Hides navigation arrows.
+    infinite: true,// Enables continuous scrolling.
+    speed: 500,//Transition speed in milliseconds.
+    slidesToScroll: 1,//Number of slides to move per scroll.
     // autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    pauseOnHover: true,
+    autoplaySpeed: 2000,//Delay between autoplay transitions.
+    cssEase: "linear",//Smoothing effect for transitions.
+    pauseOnHover: true,//Pauses autoplay when the user interacts with the slider.
     pauseOnFocus: true,
     responsive: [
       {
-        breakpoint: 10000,
+        breakpoint: 10000,// Specify device widths.
         settings: {
+            //Defines how many slides to display or scroll.
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
@@ -85,7 +88,9 @@ const Testimonial = () => {
         {/* Testimonial cards section */}
         <div>
           <Slider {...setting}>
+            {/* Slider Component: Renders the carousel with testimonials. */}
             {TestimonialsData.map((item) => {
+                // Mapping Data: Dynamically creates a testimonial card for each entry in TestimonialsData.
               return (
                 <div key={item.id}>
                   <div className="flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-secondary/10">
@@ -120,3 +125,6 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+//React Slick is a popular React component library used for building responsive and customizable carousels/sliders in React applications. It is a React wrapper for the widely-used Slick Carousel jQuery plugin.
+// carousel refers to a slider component that allows users to scroll through a collection of items 
+//Testimonials => Real Customer Feedback:
