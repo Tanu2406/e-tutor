@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import NavbarBanner from './components/Navbar/NavbarBanner'
 import Hero from './components/Hero/Hero'
 import NumberCounter from './components/NumberCounter/NumberCounter'
+import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
      <NavbarBanner/>
      <Hero/>
      <NumberCounter/>
+     <WhyChooseUs/>
     </main>
   )
 }
