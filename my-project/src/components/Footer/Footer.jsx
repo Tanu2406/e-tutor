@@ -14,9 +14,11 @@ const FooterBg = {
 const Footer = () => {
   return (
     <div style={FooterBg} className="rounded-t-3xl">
+
       <div className="bg-primary/5">
         <div className="container">
           <div className="grid md:grid-cols-4 md:gap-4 py-5 border-t-2 border-gray-300/10 text-black">
+
             {/* brand info section */}
             <div className="py-8 px-4 space-y-4">
               <div className="text-2xl flex items-center gap-2 font-bold uppercase">
@@ -43,6 +45,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+
             {/* Footer Links  */}
             <div className="grid grid-cols-2 md:grid-cols-3 md:col-span-3 md:ml-14">
               <div className="py-8 px-4">
@@ -72,6 +75,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
                   Resources
@@ -99,6 +103,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
                   Company Links
@@ -128,6 +133,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          
           {/* copyright section  */}
           <div className="mt-8">
             <div className="text-center py-6 border-t-2 border-gray-800/10">

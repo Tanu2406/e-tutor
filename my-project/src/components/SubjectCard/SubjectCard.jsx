@@ -65,6 +65,7 @@ const SubjectCard = () => {
   return (
     <>
       <div className="container py-14 md:py-24">
+
         {/* header section */}
         <div className="space-y-4 p-6 text-center max-w-[600px] mx-auto mb-5">
           <h1 className="uppercase font-semibold text-orange-500">
@@ -74,6 +75,7 @@ const SubjectCard = () => {
             Find Online Tutor in Any Subject
           </p>
         </div>
+
         {/* cards section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
           {subjectList.map((subject) => {
@@ -89,21 +91,13 @@ const SubjectCard = () => {
                 }}
                 className="border rounded-lg border-secondary/20 p-4 flex justify-start items-center gap-4 hover:!scale-105 hover:!shadow-xl duration-200 cursor-pointer"
               >
-                {/* rounded-lg: Applies large border-radius.
-                border-secondary/20: Border color with 20% opacity.
-                hover:!scale-105 hover:!shadow-xl: Scales the card slightly and adds a shadow when hovered.
-                duration-200: Transition duration for hover effects.
-                cursor-pointer: Makes the card clickable. */}
                 <div
                   style={{
                     color: subject.color,
-                    backgroundColor: subject.color + "20",//20% transparent background.
+                    backgroundColor: subject.color + "20",
                   }}
                   className="w-10 h-10 rounded-md flex justify-center items-center"
                 >
-                                    {/* w-10 h-10: Sets width and height to 10 units.
-                rounded-md: Applies medium border-radius.
-                flex justify-center items-center: Centers the icon inside. */}
                   {subject.icon}
                 </div>
                 <p>{subject.name}</p>
@@ -117,6 +111,3 @@ const SubjectCard = () => {
 };
 
 export default SubjectCard;
-
-// Cards Grid: Dynamically renders animated cards using subjectList data.
-// Responsiveness: Uses Tailwind's responsive utilities for layout adjustments.
